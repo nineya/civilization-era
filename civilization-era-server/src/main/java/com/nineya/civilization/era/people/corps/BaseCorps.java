@@ -5,7 +5,7 @@ package com.nineya.civilization.era.people.corps;
  * 2021/8/1
  * 兵种
  */
-public class BaseCorps {
+public abstract class BaseCorps {
     /**
      * 兵种价格
      */

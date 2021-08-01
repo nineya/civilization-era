@@ -28,9 +28,9 @@ public class BasePeople implements IPeople {
      */
     protected int str;
     /**
-     * 暴击率（物理攻击可以暴击）
+     * 暴击（物理攻击可以暴击，暴击时攻击力x2）
      */
-    protected double cri;
+    protected int cri;
 
     /**
      * 护甲（物理抗性）
@@ -67,7 +67,9 @@ public class BasePeople implements IPeople {
     }
 
     @Override
-    public void fighting() {
-
+    public int fighting() {
+        double actualHp = (1 + ac) * hp;
+        double actualStr = (1 + cri) * str;
+        return (int) (actualHp + godHp + actualStr);
     }
 }

@@ -1,7 +1,7 @@
 package com.nineya.civilization.era.robot;
 
 import com.nineya.civilization.era.battle.IBattleground;
-import com.nineya.civilization.era.people.Hero;
+import com.nineya.civilization.era.people.hero.Hero;
 
 /**
  * @author 殇雪话诀别

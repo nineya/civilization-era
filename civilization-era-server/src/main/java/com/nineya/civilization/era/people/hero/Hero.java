@@ -1,4 +1,7 @@
-package com.nineya.civilization.era.people;
+package com.nineya.civilization.era.people.hero;
+
+import com.nineya.civilization.era.people.BasePeople;
+import com.nineya.civilization.era.people.IPeople;
 
 import java.util.List;
 

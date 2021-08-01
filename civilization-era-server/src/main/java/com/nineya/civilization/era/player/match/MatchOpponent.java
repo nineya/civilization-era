@@ -1,4 +1,4 @@
-package com.nineya.civilization.era.player;
+package com.nineya.civilization.era.player.match;
 
 import com.nineya.civilization.era.core.BeanEnum;
 

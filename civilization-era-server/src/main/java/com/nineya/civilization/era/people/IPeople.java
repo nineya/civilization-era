@@ -31,6 +31,7 @@ public interface IPeople {
 
     /**
      * 取得兵种或者英雄的战斗力
+     * @return 战斗力
      */
-    void fighting();
+    int fighting();
 }

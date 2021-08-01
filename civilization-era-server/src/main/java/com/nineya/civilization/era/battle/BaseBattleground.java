@@ -1,8 +1,7 @@
 package com.nineya.civilization.era.battle;
 
 import com.nineya.civilization.era.people.God;
-import com.nineya.civilization.era.people.Hero;
-import lombok.Data;
+import com.nineya.civilization.era.people.hero.Hero;
 
 import java.util.List;
 

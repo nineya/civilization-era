@@ -28,4 +28,9 @@ public interface IPeople {
      * @param sor 魔法攻击力
      */
     void sufferAttack(int str, int sor);
+
+    /**
+     * 取得兵种或者英雄的战斗力
+     */
+    void fighting();
 }

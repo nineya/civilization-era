@@ -27,13 +27,17 @@ public class BaseBattleground implements IBattleground {
      */
     protected List<Hero> blueHero;
     /**
+     * 红方神像
+     */
+    protected God redGod;
+    /**
      * 红方英雄
      */
     protected List<Hero> redHero;
     /**
-     * 红方神像
+     * 战场观察者，用于观察战场状态
      */
-    protected God redGod;
+    protected List<IBattleObserver> battleObservers;
 
     public void onStart() {
 

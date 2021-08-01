@@ -11,5 +11,11 @@
 
     <artifactId>civilization-era-server</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.yaml</groupId>
+            <artifactId>snakeyaml</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>

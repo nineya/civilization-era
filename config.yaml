@@ -1,0 +1,3 @@
+core:
+  mainThreadCount: 6
+  battleThreadCount: 6

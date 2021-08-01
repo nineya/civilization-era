@@ -1,4 +1,4 @@
-package com.nineya.civilization.era.entity.role;
+package com.nineya.civilization.era.people;
 
 import lombok.Data;
 
@@ -8,49 +8,65 @@ import lombok.Data;
  * 游戏角色，包含游戏的一些基本属性
  */
 @Data
-public class Role {
+public class BasePeople implements IPeople {
 
     /**
      * 血量（Hit point）
      */
-    private int hp;
+    protected int hp;
     /**
      * 法力值（Magic Point）
      */
-    private int mp;
+    protected int mp;
 
     /**
      * 物理攻击力
      */
-    private int str;
+    protected int str;
     /**
-     * 暴击率
+     * 暴击率（物理攻击可以暴击）
      */
-    private double cri;
+    protected double cri;
     /**
      * 魔法攻击力
      */
-    private int sor;
+    protected int sor;
 
     /**
      * 护甲（物理抗性）
      */
-    private int ac;
+    protected int ac;
     /**
      * 躲闪概率,物理攻击可以躲闪（Dodge Chance）
      */
-    private double dc;
+    protected double dc;
     /**
      * 魔法抗性（Magic Resist）
      */
-    private double mr;
+    protected double mr;
 
     /**
      * 移动速度（Movement Speed）
      */
-    private int ms;
+    protected int ms;
     /**
      * 攻击速度（Attack Speed）
      */
-    private int as;
+    protected int as;
+
+    public void onCreate() {
+
+    }
+
+    public void onDemise() {
+
+    }
+
+    public void addAttribute() {
+
+    }
+
+    public void sufferAttack(int str, int sor) {
+
+    }
 }

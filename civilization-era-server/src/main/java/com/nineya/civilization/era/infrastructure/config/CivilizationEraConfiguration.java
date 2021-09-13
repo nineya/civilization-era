@@ -1,7 +1,7 @@
-package com.nineya.civilization.era.config;
+package com.nineya.civilization.era.infrastructure.config;
 
 import com.nineya.civilization.era.core.BeanEnum;
-import com.nineya.civilization.era.config.properties.CoreProperties;
+import com.nineya.civilization.era.infrastructure.config.properties.CoreProperties;
 
 import java.util.concurrent.*;
 

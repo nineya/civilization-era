@@ -1,5 +1,6 @@
-package com.nineya.civilization.era.config.properties;
+package com.nineya.civilization.era.infrastructure.config.properties;
 
+import com.zaxxer.hikari.HikariConfig;
 import lombok.Data;
 
 /**
@@ -15,5 +16,5 @@ public class CivilizationEraProperties {
     /**
      * 游戏数据库相关配置
      */
-    private DataBaseProperties dataBase = new DataBaseProperties();
+    private HikariConfig dataBase = new HikariConfig();
 }

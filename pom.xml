@@ -30,6 +30,8 @@
         <lombok.version>1.18.12</lombok.version>
         <snakeyaml.version>1.23</snakeyaml.version>
         <logback.version>1.2.3</logback.version>
+        <mybatis.version>3.4.6</mybatis.version>
+        <mysql.connector.version>8.0.21</mysql.connector.version>
     </properties>
 
     <dependencyManagement>
@@ -43,6 +45,17 @@
                 <groupId>ch.qos.logback</groupId>
                 <artifactId>logback-classic</artifactId>
                 <version>${logback.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mybatis</groupId>
+                <artifactId>mybatis</artifactId>
+                <version>${mybatis.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <scope>runtime</scope>
+                <version>${mysql.connector.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

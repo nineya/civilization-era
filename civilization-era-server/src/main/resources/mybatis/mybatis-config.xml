@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+        <!--设置启用数据库字段下划线映射到java对象的驼峰式命名属性，默认为false-->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+    </settings>
+    <!-- 类型别名，带包的类名 -->
+    <typeAliases>
+        <typeAlias type="com.nineya.rkproblem.entity.RkproblemUser" alias="rkproblemUser"/>
+        <typeAlias type="com.nineya.rkproblem.entity.Notice" alias="notice"/>
+        <typeAlias type="java.lang.Integer" alias="int"/>
+    </typeAliases>
+    <!-- 数据库的连接 -->
+    <environments default="default">
+        <environment id="default">
+            <transactionManager type="jdbc">  <!-- 事务管理器 -->
+            </transactionManager>
+            <dataSource type="pooled"> <!-- 连接池，允许连接复用 -->
+                <property name="driver" value="com.mysql.jdbc.Driver"/>
+                <property name="url"
+                          value="jdbc:mysql://116.63.169.246:3306/rkproblem?useSSL=false&amp;serverTimezone=CST&amp;allowMultiQueries=true"/>
+                <property name="username" value="rkproblem"/>
+                <property name="password" value="a7Lxwi7pc2sfj8Tp"/>
+                <!--最大活跃连接数 -->
+                <property name="poolMaximumActiveConnections" value="10"/>
+                <!--最大空闲连接数-->
+                <property name="poolMaximumIdleConnections" value="5"/>
+                <!--创建连接时最大等待时间20s-->
+                <property name="poolTimeToWait" value="20000"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <mappers>
+        <mapper resource="com/learn/mapper/FlowerMapper.xml"/>
+    </mappers>
+</configuration>

@@ -1,4 +1,4 @@
-package com.nineya.civilization.era.util;
+package com.nineya.civilization.era.infrastructure.util;
 
 /**
  * @author 殇雪话诀别

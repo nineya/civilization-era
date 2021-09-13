@@ -1,4 +1,4 @@
-package com.nineya.civilization.era.config.properties;
+package com.nineya.civilization.era.infrastructure.config.properties;
 
 import lombok.Data;
 

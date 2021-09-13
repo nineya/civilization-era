@@ -1,4 +1,4 @@
-package com.nineya.civilization.era.robot;
+package com.nineya.civilization.era.domain.robot;
 
 /**
  * @author 殇雪话诀别

@@ -1,6 +1,6 @@
-package com.nineya.civilization.era.robot;
+package com.nineya.civilization.era.domain.robot;
 
-import com.nineya.civilization.era.battle.IBattleground;
+import com.nineya.civilization.era.domain.battle.IBattleground;
 import com.nineya.civilization.era.people.hero.Hero;
 
 /**

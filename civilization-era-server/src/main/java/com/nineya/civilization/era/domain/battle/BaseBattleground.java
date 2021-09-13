@@ -1,4 +1,4 @@
-package com.nineya.civilization.era.battle;
+package com.nineya.civilization.era.domain.battle;
 
 import com.nineya.civilization.era.people.God;
 import com.nineya.civilization.era.people.hero.Hero;

@@ -1,4 +1,4 @@
-package com.nineya.civilization.era.battle;
+package com.nineya.civilization.era.domain.battle;
 
 /**
  * @author 殇雪话诀别
